@@ -1,6 +1,9 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 export const Filters = () => {
+  const [brandFilter,setBrandFilter]=useState("")
+  const [memory,setMemory]=useState("")
+  const [price,setPrice]=useState({min:0,max:999999})
   const brands=[]
   return (
     <aside>
