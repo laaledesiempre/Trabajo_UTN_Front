@@ -3,8 +3,7 @@ import {Nav, Account} from "./"
 export const Header = () => {
   return (
     <header>
-        <button className="burger"></button>
-        <h1>Constructo</h1>
+        <h1>Iempanada</h1>
         <Nav></Nav>
         <Account></Account>
     </header>
