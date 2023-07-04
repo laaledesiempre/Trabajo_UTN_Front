@@ -1,7 +1,8 @@
 import React from 'react'
 
 export const Footer = () => {
-const footerLinks=["Ventas corporativas","Retribucion","Trabajos","Noticias"]
+const footerLinks=["Ventas corporativas","Retribucion","Trabajos","Noticias", "Condiciones de venta", "Para colegas", "Programas Bonus", "Tarjetas de regalo", "Acreditacion de pagos", "Prestamos", "Entregas", "Centros de atencion", "Como hacer un pedido", "Formas de pago", "Cambios y devoluciones", "Garantia", "Estado de orden", "Conocimiento basico"]
+
     return (
     <footer>
         <div>
