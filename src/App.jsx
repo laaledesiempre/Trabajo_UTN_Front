@@ -1,9 +1,11 @@
 import './App.css'
-
-export const App=()=>{
+import { Footer, Header } from "./components/index.jsx";
+export const App = () => {
 
   return (
     <>
+      <Header />
+      <Footer />
     </>
   )
 }
