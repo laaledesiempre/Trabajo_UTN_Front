@@ -4,4 +4,8 @@
   margin:0;
   box-sizing:border-box;
   font-family: "Roboto";
+
+}
+body{
+  background-color: rgba(0,0,20,0.1);
 }
