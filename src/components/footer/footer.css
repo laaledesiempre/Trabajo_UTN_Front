@@ -39,3 +39,27 @@ h2{
   flex-direction: column;
   gap:2rem;
 }
+
+@media (max-width: 740px) {
+  footer{
+    flex-direction: column;
+  }
+}
+@media (max-width: 520px) {
+  footer{
+    padding:1.9rem;
+  }
+  .footer-links-wrapper{
+    gap:0.5rem
+  }
+  .footer-links-wrapper > *{
+  font-size:0.9rem;
+  }
+  h2{
+    margin: 1.5rem auto;
+    font-size: 2rem;
+  }
+  .footer-street{
+    margin: 0.5rem auto;
+  }
+}
