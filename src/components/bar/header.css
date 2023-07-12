@@ -48,4 +48,26 @@ header > div > button:hover{
   gap:1.2rem
 }
 
+@media (max-width: 1000px){
+  
+  .input-box > input{
+   min-width:300px; 
+  }
 
+  h1{
+    font-size:1.5rem;
+  }
+
+  header{
+    padding: 0.9rem 1.2rem;
+  }
+  .account-button{
+  font-size: 1.2rem;
+}
+}
+
+@media (max-width: 650px){
+  .input-box{
+    display:none;
+  }
+}
