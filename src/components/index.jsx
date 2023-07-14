@@ -5,5 +5,6 @@ import { Filters } from "./center/Filters"
 import { Items } from "./center/Items"
 import { Footer } from "./footer/Footer"
 import { Contact } from "../pages/Contact"
-
-export { Header, Contact, Nav, Account, Filters, Footer, Items }
+import { Article } from "../pages/Article"
+import { Adder } from "./general/Adder"
+export { Header, Contact, Nav, Account, Adder, Article, Filters, Footer, Items }

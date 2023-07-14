@@ -1,43 +1,20 @@
 import React from 'react'
-
+import "./artcile.css"
+import { Adder } from '../components';
 export const Article = () => {
-  const params={};
+  const params = { a: "a" };
   return (
-    <section>
-     <h3>{params}</h3>
-     <p>{params}</p>
-     <div>
-        <div className="image-wrapper">
-            <img src="#" alt="#" />
-        </div>
-        <p>{params}</p>
-        <div>
-            <p>Colors:</p>
-            <div>
-                <div>
-                    <svg viewBox="0 0 120 120" version="1.1"
-  xmlns="http://www.w3.org/2000/svg">
-  <circle cx="60" cy="60" r="50"/>
-</svg>
-                    black
-                </div>
-                <div>
-                    <svg viewBox="0 0 120 120" version="1.1"
-  xmlns="http://www.w3.org/2000/svg">
-  <circle cx="60" cy="60" r="50"/>
-</svg>
-                    orange
-                </div>
-                <div>
-                    <svg viewBox="0 0 120 120" version="1.1"
-  xmlns="http://www.w3.org/2000/svg">
-  <circle cx="60" cy="60" r="50"/>
-</svg>
-                    gray
-                </div>
-            </div>
-        </div>
-     </div>
+    <section className='article-wrapper'>
+      <div>
+        <h3>Item Name</h3>
+        <p>Category</p>
+      </div>
+      <img src="https://cdn0.recetasgratis.net/es/posts/2/5/9/empanadas_veganas_de_lentejas_75952_600.jpg" alt="#" />
+      <div>
+
+      </div>
+      <p className='description'>{params.a}</p>
+      <Adder />
     </section>
   )
 }
