@@ -7,4 +7,5 @@ import { Footer } from "./footer/Footer"
 import { Contact } from "../pages/Contact"
 import { Article } from "../pages/Article"
 import { Adder } from "./general/Adder"
-export { Header, Contact, Nav, Account, Adder, Article, Filters, Footer, Items }
+import { MainPage } from "../pages/MainPage"
+export { Header, MainPage, Contact, Nav, Account, Adder, Article, Filters, Footer, Items }

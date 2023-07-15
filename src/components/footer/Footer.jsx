@@ -16,7 +16,7 @@ export const Footer = () => {
       <div className="footer-links-wrapper">
         {footerLinks.map(e => {
           return (
-            <a href="#">{e}</a>
+            <a key={e} href="#">{e}</a>
           )
         })}
       </div>

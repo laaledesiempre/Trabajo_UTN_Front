@@ -1,0 +1,8 @@
+.main-page-wrapper{
+  display: flex;
+  width: 80%;
+  flex-wrap: wrap;
+  margin: 1rem auto;
+  justify-content: center;
+  gap: 1.5rem;
+}

@@ -1,5 +1,5 @@
 import './App.css'
-import { Footer, Header, Contact, Article } from "./components/index.jsx";
+import { Footer, Header, Contact, Article, MainPage } from "./components/index.jsx";
 import { Cart } from './pages/Cart';
 export const App = () => {
 
@@ -8,7 +8,8 @@ export const App = () => {
       <Header />
       {/*<Contact />*/}
       {/*<Cart />*/}
-      <Article />
+      {/*<Article />*/}
+      <MainPage />
       <Footer />
     </>
   )
