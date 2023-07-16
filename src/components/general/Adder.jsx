@@ -14,18 +14,14 @@ export const Adder = (id = 1) => {
   ,[productos[id.id].quantity])
   const SnSHandler = (sign) => {
     if (sign === "-") {
-      console.log(productos)
-      console.log(productos[id.id].quantity)
       setCantidad(cantidad - 1)
     } else {
-      console.log(productos[id.id])
       setCantidad(cantidad + 1)
-      console.log(cantidad) 
     }
   }
   return (
     <div className="quantity-display">
-      <button onClick={() => { SnSHandler("-") }} className="cart-counter">-</button>
+      <button disabled={cantidad<1} onClick={() => { SnSHandler("-") }} className="cart-counter">-</button>
       <p>{productos[id.id].quantity}</p>
       <button onClick={() => { SnSHandler("+") }} className="cart-counter">+</button>
     </div>

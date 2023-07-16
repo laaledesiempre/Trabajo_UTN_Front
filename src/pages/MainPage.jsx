@@ -2,6 +2,7 @@ import React from "react"
 import "./mainPage.css"
 import { useSelector } from "react-redux"
 import { Adder } from "../components"
+import { Link } from "react-router-dom"
 export const MainPage = () => {
   const productos = useSelector((state) => state.carritoReducer.Productos)
   return (
@@ -12,7 +13,7 @@ export const MainPage = () => {
             <img src={e.pic} />
             <p className="cart-category">{e.category}</p>
 
-              <h4>{e.name}</h4>
+              <Link to={"/article/"+e.id}><h4>{e.name}</h4></Link>
             <p className="cart-price">${e.price}</p>
             <Adder id={e.id} />
           </div>

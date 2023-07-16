@@ -138,7 +138,6 @@ export const carritoSlice = createSlice({
     addToCarrito: (state, action) => {
       const newProducts = [...state.Productos]
       newProducts[action.payload.id] = action.payload
-      console.log(action.payload)
       state.Productos = newProducts;
     },
   },

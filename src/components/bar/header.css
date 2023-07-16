@@ -9,6 +9,7 @@ header{
 }
 h1{
   font-size:3rem;
+  color: black !important;
 }
 .input-box{
   position:relative;
@@ -31,6 +32,21 @@ header > div > input::placeholder{
   transform: translateY(-50%);
   left:1.2rem;
   position: absolute;
+}
+a{
+  text-decoration: none;
+  color: rgba(0,0,0,0.2);
+  transition: 200ms all linear;
+}
+a:visited{
+  color: rgba(0,0,0,0.2)
+}
+a:hover{
+  text-decoration: none;
+  color: rgba(0,0,0,0.5)
+}
+a:visited:hover{
+  color: rgba(0,0,0,0.5)
 }
 header > div > button {
   font-size:2rem;

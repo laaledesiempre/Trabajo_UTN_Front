@@ -1,20 +1,24 @@
 import React from 'react'
 import "./artcile.css"
 import { Adder } from '../components';
+import { useParams } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 export const Article = () => {
-  const params = { a: "a" };
+  const {id}= useParams()
+  const store= useSelector(store=>store.carritoReducer.Productos)
+  const item= store.find(e=>e.id==id)
   return (
     <section className='article-wrapper'>
       <div>
-        <h3>Item Name</h3>
-        <p>Category</p>
+        <h3>{item.name}</h3>
+        <p>{item.category}</p>
       </div>
-      <img src="https://cdn0.recetasgratis.net/es/posts/2/5/9/empanadas_veganas_de_lentejas_75952_600.jpg" alt="#" />
-      <div>
+      <img src={item.pic} />
+      
 
-      </div>
-      <p className='description'>{params.a}</p>
-      <Adder id={1}/>
+     
+      <p className='description'>Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Cus.</p>
+<div className='article-adder'>      <Adder id={1}/> </div>
     </section>
   )
 }
