@@ -137,7 +137,8 @@ export const carritoSlice = createSlice({
   reducers: {
     addToCarrito: (state, action) => {
       const newProducts = [...state.Productos]
-      newProducts[action.id] = action.payload
+      newProducts[action.payload.id] = action.payload
+      console.log(action.payload)
       state.Productos = newProducts;
     },
   },

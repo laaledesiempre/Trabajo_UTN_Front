@@ -14,7 +14,7 @@ export const Article = () => {
 
       </div>
       <p className='description'>{params.a}</p>
-      <Adder />
+      <Adder id={1}/>
     </section>
   )
 }

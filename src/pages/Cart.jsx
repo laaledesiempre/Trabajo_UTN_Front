@@ -1,93 +1,27 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./cart.css"
+import { useSelector } from 'react-redux'
+import { Adder } from '../components'
 export const Cart = () => {
-  const cart = [{
-    image: "https://www.recetasgratis.net/receta-de-empanadas-veganas-de-lentejas-75952.html",
-    category: "example",
-    name: "example",
-    price: NaN,
-    id: "1",
-    quantity: 2
-  }, {
-    image: "https://www.recetasgratis.net/receta-de-empanadas-veganas-de-lentejas-75952.html",
-    category: "example",
-    name: "example",
-    price: NaN,
-    id: "1",
-    quantity: 2
-  }, {
-    image: "https://www.recetasgratis.net/receta-de-empanadas-veganas-de-lentejas-75952.html",
-    category: "example",
-    name: "example",
-    price: NaN,
-    id: "1",
-    quantity: 2
-  }, {
-    image: "https://www.recetasgratis.net/receta-de-empanadas-veganas-de-lentejas-75952.html",
-    category: "example",
-    name: "example",
-    price: NaN,
-    id: "1",
-    quantity: 2
-  }, {
-    image: "https://www.recetasgratis.net/receta-de-empanadas-veganas-de-lentejas-75952.html",
-    category: "example",
-    name: "example",
-    price: NaN,
-    id: "1",
-    quantity: 2
-  }, {
-    image: "https://www.recetasgratis.net/receta-de-empanadas-veganas-de-lentejas-75952.html",
-    category: "example",
-    name: "example",
-    price: NaN,
-    id: "1",
-    quantity: 2
-  }, {
-    image: "https://www.recetasgratis.net/receta-de-empanadas-veganas-de-lentejas-75952.html",
-    category: "example",
-    name: "example",
-    price: NaN,
-    id: "1",
-    quantity: 2
-  }, {
-    image: "https://www.recetasgratis.net/receta-de-empanadas-veganas-de-lentejas-75952.html",
-    category: "example",
-    name: "example",
-    price: NaN,
-    id: "1",
-    quantity: 2
-  }, {
-    image: "https://www.recetasgratis.net/receta-de-empanadas-veganas-de-lentejas-75952.html",
-    category: "example",
-    name: "example",
-    price: NaN,
-    id: "1",
-    quantity: 2
-  }, {
-    image: "https://cdn0.recetasgratis.net/es/posts/2/5/9/empanadas_veganas_de_lentejas_75952_600.jpg",
-    category: "example",
-    name: "example",
-    price: NaN,
-    id: "1",
-    quantity: 2
-  },]
+  const cart= useSelector(state=> state.carritoReducer.Productos)
+  const [carrito,setCarrito]= useState(cart.filter(e=>e.quantity>0))
+  useEffect(()=>{
+    console.log(cart)
+    setCarrito(cart.filter(e=>e.quantity>0))
+    console.log(carrito)
+  },[cart])
   return (
     <div className="cart-wrapper">
       <h3>Cart</h3>
       <div className="cart-items-wrapper">
-        {cart.map(e => {
+        {carrito.map(e => {
           return (
             <div key={e.id} className="cart-item">
-              <img src={e.image} />
+              <img src={e.pic} />
               <p className="cart-category">{e.category}</p>
               <h4>{e.name}</h4>
               <p className="cart-price">${e.price}</p>
-              <div className="quantity-display">
-                <button className="cart-counter">-</button>
-                <p>{e.quantity}</p>
-                <button className="cart-counter">+</button>
-              </div>
+               <Adder id={e.id}/> 
             </div>
           )
         })}

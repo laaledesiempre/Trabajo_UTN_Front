@@ -6,9 +6,9 @@ export const App = () => {
   return (
     <>
       <Header />
-      {/*<Contact />*/}
-      {/*<Cart />*/}
-      {/*<Article />*/}
+      <Contact />
+      <Cart />
+      <Article />
       <MainPage />
       <Footer />
     </>
