@@ -4,10 +4,11 @@ import { useSelector } from "react-redux"
 import { Adder } from "../components"
 import { Link } from "react-router-dom"
 export const MainPage = () => {
+  const filterString= useSelector((state)=> state.filtersReducer.input)
   const productos = useSelector((state) => state.carritoReducer.Productos)
   return (
     <div className="main-page-wrapper">
-      {productos.map(e => {
+      {productos.filter(e=>e.name.includes(filterString)).map(e => {
         return (
           <div key={e.id} className="cart-item">
             <img src={e.pic} />
