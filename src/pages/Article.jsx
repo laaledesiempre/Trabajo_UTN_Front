@@ -14,10 +14,7 @@ export const Article = () => {
         <p>{item.category}</p>
       </div>
       <img src={item.pic} />
-      
-
-     
-      <p className='description'>Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Cus.</p>
+      <p className='description'>{item.description}</p>
 <div className='article-adder'>      <Adder id={1}/> </div>
     </section>
   )
