@@ -5,7 +5,6 @@ export const Account = () => {
   return (
     <div className="account-wrapper">
       <button className="account-button"><Link to="/contact">Contacto</Link></button>
-      
       <button className="account-button"><Link to="/"><BsHouse /></Link></button>
       <button className="account-button"><Link to="/cart"><BsCart3 /></Link></button>
     </div>

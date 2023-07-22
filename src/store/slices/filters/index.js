@@ -1,9 +1,9 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, current } from "@reduxjs/toolkit";
 
 export const filtersSlice = createSlice({
   name: "Filters",
   initialState: {
-    filter: [bebida, empanada.otros],
+    filters: ["Bebida", "Empanada", "Complementos"],
     input: ""
   },
   reducers: {
@@ -11,16 +11,22 @@ export const filtersSlice = createSlice({
       state.input = action.payload;
     },
     changeFilter: (state, action) => {
-      if (state.filter.includes(action.payload)) {
-        state.filter = state.filter.filter(e => e !== action.payload)
+      const currentFilter = current(state.filters)
+      if (currentFilter.includes(action.payload)) {
+        state.filters = [...currentFilter].filter(e => e !== action.payload)
       } else {
-        state.filter = state.filter.slice().push(action.payload)
+        const newArr = currentFilter.slice()
+        newArr.push(action.payload)
+        state.filters = newArr
       }
+    },
+    resetFilters: (state, _action) => {
+      state.filters = ["Bebida", "Empanada", "Complementos"]
     }
   },
 });
 
-export const { changeInput, changeFilter } = carritoSlice.actions;
+export const { resetFilters, changeInput, changeFilter } = filtersSlice.actions;
 
 export const filtersReducer = filtersSlice.reducer;
 
@@ -29,4 +35,7 @@ export const updateInput = (newInput) => (dispatch) => {
 }
 export const updateFilter = (filter) => (dispatch) => {
   dispatch(changeFilter(filter))
+}
+export const reloadFilters = () => (dispatch) => {
+  dispatch(resetFilters())
 }

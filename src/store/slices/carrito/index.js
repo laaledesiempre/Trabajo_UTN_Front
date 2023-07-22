@@ -131,7 +131,7 @@ export const carritoSlice = createSlice({
         id: 14,
         name: "Nachos",
         pic: "https://ourplantbasedworld.com/wp-content/uploads/2021/02/IMG_8391-featured-500x500.jpg",
-        category: "Bebida",
+        category: "Complementos",
         quantity: 0,
         price: 600,
         description: "Nachos mexicanos hechos caseramente con la mejor harina de maiz (guacamole y chamoy incluidos)"
