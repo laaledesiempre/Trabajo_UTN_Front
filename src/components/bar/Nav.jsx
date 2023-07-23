@@ -1,21 +1,29 @@
-import React, {useState , useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import { IconContext } from 'react-icons'
 import { BsSearch, } from 'react-icons/bs'
-import { useDispatch}  from 'react-redux'
-import {updateInput} from '../../store/slices/filters'
+import { useDispatch } from 'react-redux'
+import { updateInput } from '../../store/slices/filters'
+import { useNavigate } from 'react-router-dom'
 export const Nav = () => {
-  const dispatch= useDispatch()
+  const dispatch = useDispatch()
+  const navigate = useNavigate()
   const [inputValue, setInputValue] = useState("")
+  window.addEventListener("DOMContentLoaded", () => {
+    console.log(document.querySelector("#main-input"))
+    document.querySelector("#main-input").addEventListener("keypress", (e) => {
+      e.key == "Enter" && navigate("/")
+    })
+  })
   useEffect(() => {
     dispatch(updateInput(inputValue))
   }, [inputValue])
-  
+
   return (
     <div className='input-box'>
       <IconContext.Provider value={{ className: "input-search-icon" }}>
         <BsSearch />
       </IconContext.Provider>
-      <input placeholder='Busca Productos ...' onChange={(e)=>{setInputValue(e.target.value)}} type="text"></input>
+      <input id='main-input' placeholder='Busca Productos ...' onChange={(e) => { setInputValue(e.target.value) }} type="text"></input>
     </div>
   )
 }

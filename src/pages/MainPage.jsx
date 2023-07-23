@@ -2,10 +2,11 @@ import React, { useEffect } from "react"
 import "./mainPage.css"
 import { useDispatch, useSelector } from "react-redux"
 import { Adder } from "../components"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { resetFilters, updateFilter } from "../store/slices/filters"
 export const MainPage = () => {
   const dispatch = useDispatch()
+  const navigate = useNavigate()
   const filterString = useSelector((state) => state.filtersReducer.input)
   const filterFilters = useSelector((state) => state.filtersReducer.filters)
   const productos = useSelector((state) => state.carritoReducer.Productos)
@@ -34,7 +35,7 @@ export const MainPage = () => {
         .map((e) => {
           return (
             <div key={e.id} className="cart-item">
-              <img src={e.pic} />
+              <img onClick={() => navigate("/article/" + e.id)} src={e.pic} />
               <p className="cart-category">{e.category}</p>
               <Link to={"/article/" + e.id}><h4>{e.name}</h4></Link>
               <p className="cart-price">${e.price}</p>
