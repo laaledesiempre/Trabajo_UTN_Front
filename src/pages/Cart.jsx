@@ -15,7 +15,7 @@ export const Cart = () => {
         {carrito.map(e => {
           return (
             <div key={e.id} className="cart-item">
-              <img src={e.pic} />
+              <img onClick={() => navigate("/article/" + e.id)} src={e.pic} />
               <p className="cart-category">{e.category}</p>
               <h4>{e.name}</h4>
               <p className="cart-price">${e.price}</p>
