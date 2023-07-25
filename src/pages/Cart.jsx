@@ -10,7 +10,7 @@ export const Cart = () => {
   }, [cart])
   return (
     <div className="cart-wrapper">
-      <h3>Cart</h3>
+      <h3>Carrito</h3>
       <div className="cart-items-wrapper">
         {carrito.map(e => {
           return (
