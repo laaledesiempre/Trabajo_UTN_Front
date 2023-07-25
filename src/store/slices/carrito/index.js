@@ -7,7 +7,7 @@ export const carritoSlice = createSlice({
       {
         id: 0,
         name: "Empanada de lenteja",
-        pic: "https://ourplantbasedworld.com/wp-content/uploads/2021/02/IMG_8391-featured-500x500.jpg",
+        pic: "https://github.com/laaledesiempre/Trabajo_UTN_Front/blob/main/public/empa-lenteja.jpg?raw=true",
         category: "Empanada",
         quantity: 0,
         price: 500,
@@ -15,7 +15,7 @@ export const carritoSlice = createSlice({
       }, {
         id: 1,
         name: "Empanada de verdura",
-        pic: "https://ourplantbasedworld.com/wp-content/uploads/2021/02/IMG_8391-featured-500x500.jpg",
+        pic: "https://github.com/laaledesiempre/Trabajo_UTN_Front/blob/main/public/empa-verudra.jpg?raw=true",
         category: "Empanada",
         quantity: 0,
         price: 500,
@@ -23,7 +23,7 @@ export const carritoSlice = createSlice({
       }, {
         id: 2,
         name: "Empanada de Jamon de arroz y queso",
-        pic: "https://ourplantbasedworld.com/wp-content/uploads/2021/02/IMG_8391-featured-500x500.jpg",
+        pic: "https://github.com/laaledesiempre/Trabajo_UTN_Front/blob/main/public/empa-jamon-queso.jpg?raw=true",
         category: "Empanada",
         quantity: 0,
         price: 500,
@@ -32,7 +32,7 @@ export const carritoSlice = createSlice({
       }, {
         id: 8,
         name: "Empanada de Capresse",
-        pic: "https://ourplantbasedworld.com/wp-content/uploads/2021/02/IMG_8391-featured-500x500.jpg",
+        pic: "https://github.com/laaledesiempre/Trabajo_UTN_Front/blob/main/public/empa-capresse.jpg?raw=true",
         category: "Empanada",
         quantity: 0,
         price: 500,
@@ -41,7 +41,7 @@ export const carritoSlice = createSlice({
       }, {
         id: 3,
         name: "Empanada de Zapallo",
-        pic: "https://ourplantbasedworld.com/wp-content/uploads/2021/02/IMG_8391-featured-500x500.jpg",
+        pic: "https://github.com/laaledesiempre/Trabajo_UTN_Front/blob/main/public/empa-zapallo.jpg?raw=true",
         category: "Empanada",
         quantity: 0,
         price: 500,
@@ -50,7 +50,7 @@ export const carritoSlice = createSlice({
       }, {
         id: 4,
         name: "Empanada de Cebolla y queso",
-        pic: "https://ourplantbasedworld.com/wp-content/uploads/2021/02/IMG_8391-featured-500x500.jpg",
+        pic: "https://github.com/laaledesiempre/Trabajo_UTN_Front/blob/main/public/empa-cebolla.jpg?raw=true",
         category: "Empanada",
         quantity: 0,
         price: 600,
@@ -59,7 +59,7 @@ export const carritoSlice = createSlice({
       }, {
         id: 5,
         name: "Empanada de Carne de soja picante",
-        pic: "https://ourplantbasedworld.com/wp-content/uploads/2021/02/IMG_8391-featured-500x500.jpg",
+        pic: "https://github.com/laaledesiempre/Trabajo_UTN_Front/blob/main/public/empa-picante.jpg?raw=true",
         category: "Empanada",
         quantity: 0,
         price: 500,
@@ -68,7 +68,7 @@ export const carritoSlice = createSlice({
       }, {
         id: 6,
         name: "Empanada de Hummus",
-        pic: "https://ourplantbasedworld.com/wp-content/uploads/2021/02/IMG_8391-featured-500x500.jpg",
+        pic: "https://github.com/laaledesiempre/Trabajo_UTN_Front/blob/main/public/empa-hummus.jpg?raw=true",
         category: "Empanada",
         quantity: 0,
         price: 700,
@@ -77,7 +77,7 @@ export const carritoSlice = createSlice({
       }, {
         id: 7,
         name: "Empanada de Babaganush",
-        pic: "https://ourplantbasedworld.com/wp-content/uploads/2021/02/IMG_8391-featured-500x500.jpg",
+        pic: "https://github.com/laaledesiempre/Trabajo_UTN_Front/blob/main/public/empa-babaganush.jpg?raw=true",
         category: "Empanada",
         quantity: 0,
         price: 800,
@@ -86,7 +86,7 @@ export const carritoSlice = createSlice({
       }, {
         id: 9,
         name: "Sprite",
-        pic: "https://ourplantbasedworld.com/wp-content/uploads/2021/02/IMG_8391-featured-500x500.jpg",
+        pic: "https://github.com/laaledesiempre/Trabajo_UTN_Front/blob/main/public/sprite.jpg?raw=true",
         category: "Bebida",
         quantity: 0,
         price: 600,
@@ -94,7 +94,7 @@ export const carritoSlice = createSlice({
       }, {
         id: 10,
         name: "Fanta",
-        pic: "https://ourplantbasedworld.com/wp-content/uploads/2021/02/IMG_8391-featured-500x500.jpg",
+        pic: "https://github.com/laaledesiempre/Trabajo_UTN_Front/blob/main/public/fanta.jpg?raw=true",
         category: "Bebida",
         quantity: 0,
         price: 600,
@@ -103,7 +103,7 @@ export const carritoSlice = createSlice({
       }, {
         id: 11,
         name: "Coca-cola",
-        pic: "https://ourplantbasedworld.com/wp-content/uploads/2021/02/IMG_8391-featured-500x500.jpg",
+        pic: "https://github.com/laaledesiempre/Trabajo_UTN_Front/blob/main/public/coca-zero.jpg?raw=true",
         category: "Bebida",
         quantity: 0,
         price: 600,
@@ -112,7 +112,7 @@ export const carritoSlice = createSlice({
       }, {
         id: 12,
         name: "Paso de los Toros",
-        pic: "https://ourplantbasedworld.com/wp-content/uploads/2021/02/IMG_8391-featured-500x500.jpg",
+        pic: "https://github.com/laaledesiempre/Trabajo_UTN_Front/blob/main/public/paso-de-los-toros.jpg?raw=true",
         category: "Bebida",
         quantity: 0,
         price: 500,
@@ -121,7 +121,7 @@ export const carritoSlice = createSlice({
       }, {
         id: 13,
         name: "Papas fritas",
-        pic: "https://ourplantbasedworld.com/wp-content/uploads/2021/02/IMG_8391-featured-500x500.jpg",
+        pic: "https://github.com/laaledesiempre/Trabajo_UTN_Front/blob/main/public/papa.jpg?raw=true",
         category: "Complementos",
         quantity: 0,
         price: 550,
@@ -130,7 +130,7 @@ export const carritoSlice = createSlice({
       }, {
         id: 14,
         name: "Nachos",
-        pic: "https://ourplantbasedworld.com/wp-content/uploads/2021/02/IMG_8391-featured-500x500.jpg",
+        pic: "https://github.com/laaledesiempre/Trabajo_UTN_Front/blob/main/public/nachos.jpg?raw=true",
         category: "Complementos",
         quantity: 0,
         price: 600,
