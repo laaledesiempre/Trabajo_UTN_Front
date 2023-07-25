@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import "./cart.css"
-import { useSelector } from 'react-redux'
+import { useSelector , useNavigate} from 'react-redux'
 import { Adder } from '../components'
 export const Cart = () => {
+  const navigate= useNavigate()
   const cart = useSelector(state => state.carritoReducer.Productos)
   const [carrito, setCarrito] = useState(cart.filter(e => e.quantity > 0))
   useEffect(() => {
