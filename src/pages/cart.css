@@ -36,7 +36,6 @@ h4{
 .cart-item > img {
   width: 100% ;
   border-radius: 2rem;
-  background-color: blue;
   transition: 200ms all ease-out;
   position: relative;
 }
