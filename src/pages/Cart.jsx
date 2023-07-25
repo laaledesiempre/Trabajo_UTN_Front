@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import "./cart.css"
-import { useSelector , useNavigate} from 'react-redux'
+import { useSelector } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
 import { Adder } from '../components'
 export const Cart = () => {
   const navigate= useNavigate()
