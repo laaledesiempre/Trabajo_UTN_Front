@@ -3,7 +3,7 @@ import { IconContext } from 'react-icons'
 import { BsSearch, } from 'react-icons/bs'
 import { useDispatch } from 'react-redux'
 import { updateInput } from '../../store/slices/filters'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 export const Nav = () => {
   const dispatch = useDispatch()
   const navigate = useNavigate()
@@ -21,7 +21,7 @@ export const Nav = () => {
   return (
     <div className='input-box'>
       <IconContext.Provider value={{ className: "input-search-icon" }}>
-        <BsSearch />
+        <Link to="/"><BsSearch /></Link>
       </IconContext.Provider>
       <input id='main-input' placeholder='Busca Productos ...' onChange={(e) => { setInputValue(e.target.value) }} type="text"></input>
     </div>

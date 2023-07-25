@@ -56,12 +56,30 @@ header > div > button {
   font-weight: bolder;
   transition: 200ms all linear
 }
+.search-icon{
+  display: none;
+}
 header > div > button:hover{
   color:rgba(0,0,0,0.5);
 } 
 .account-wrapper{
   display:flex;
   gap:1.2rem
+}
+.cart-icon{
+  position: relative;
+}
+.cart-counter-dot{
+  display: block;
+  position: absolute;
+  background-color: red;
+  color: white;
+  border-radius: 2rem;
+  font-size: 0.7rem;
+  padding: 10%;
+  font-weight: bolder;
+  top:40%;
+  left: 50%;
 }
 
 @media (max-width: 1000px){
@@ -83,7 +101,17 @@ header > div > button:hover{
 }
 
 @media (max-width: 650px){
+  .input-on-site{
+    top: 1rem !important;
+  }
   .input-box{
-    display:none;
+    transition: 200ms all ease-in-out;
+    top: -10%;
+    left: 50%; 
+    transform: translateX(-50%);
+    position: absolute;
+  }
+  .search-icon{
+    display: inline;
   }
 }
