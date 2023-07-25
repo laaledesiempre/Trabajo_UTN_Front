@@ -9,7 +9,6 @@ export const Nav = () => {
   const navigate = useNavigate()
   const [inputValue, setInputValue] = useState("")
   window.addEventListener("DOMContentLoaded", () => {
-    console.log(document.querySelector("#main-input"))
     document.querySelector("#main-input").addEventListener("keypress", (e) => {
       e.key == "Enter" && navigate("/")
     })
@@ -21,7 +20,7 @@ export const Nav = () => {
   return (
     <div className='input-box'>
       <IconContext.Provider value={{ className: "input-search-icon" }}>
-        <Link to="/"><BsSearch /></Link>
+        <Link to="/" onClick={() => { document.querySelector(".input-box").classList.toggle("input-on-site") }}><BsSearch /></Link>
       </IconContext.Provider>
       <input id='main-input' placeholder='Busca Productos ...' onChange={(e) => { setInputValue(e.target.value) }} type="text"></input>
     </div>
